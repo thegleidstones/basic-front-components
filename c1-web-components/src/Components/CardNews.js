@@ -48,7 +48,10 @@ class CardNews extends HTMLElement {
         style.textContent = 
         `        
             .card {
-                width: 100%;
+                border-radius: 5px;
+                margin-top: 30px;
+                margin-left: 40px;
+                width: 90%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -80,8 +83,9 @@ class CardNews extends HTMLElement {
                 font-weight: 400;
             }
 
-            .card_right {
-
+            .card_right > img {
+                padding: 5px;
+                height: 200px;
             }
         `
         return style;
